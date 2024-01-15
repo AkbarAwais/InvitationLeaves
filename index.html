@@ -28,20 +28,9 @@
     </style>
 </head>
 <body>
-    <div id="loading-text">Loading Video...</div>
-    <video autoplay loop muted playsinline id="video" controls oncontextmenu="return false;">
+    <video preload="auto" autoplay loop muted playsinline id="video" controls oncontextmenu="return false;">
         <source src="JoinUsEdited.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-
-    <script>
-        // Check if the video is loaded successfully
-        var video = document.getElementById('video');
-        video.oncanplaythrough = function() {
-            // Hide the loading text when the video is loaded
-            var loadingText = document.getElementById('loading-text');
-            loadingText.style.display = 'none';
-        };
-    </script>
 </body>
 </html>
